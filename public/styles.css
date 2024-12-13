@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  margin: 1rem;
+  padding: 1rem;
+  width: calc(33% - 2rem);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills ul li {
+  background: #f4f4f4;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
+}
+
+#certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certificate {
+  background: #f4f4f4;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+#about {
+  text-align: center;
+  padding: 3rem 2rem; /* More padding for spacing */
+}
+
+#about p {
+  font-size: 1.5rem; /* Increase the font size of the paragraph */
+  max-width: 800px; /* Limit the width of the text */
+  margin: 0 auto; /* Center align the paragraph */
+}
+
+#contact {
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers the form horizontally */
+  align-items: center; /* Centers the form vertically */
+  flex-direction: column; /* Stacks the heading and form vertically */
+  height: 100vh; /* Ensures the content is vertically centered */
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem; /* Adds spacing between the heading and the form */
+}
+
+#contact form {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Arranges form elements vertically */
+  align-items: center; /* Centers form elements horizontally inside the form */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: left; /* Ensures labels are left-aligned */
+}
+
+form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  text-align: center; /* Centers the text inside input/textarea */
+  margin-left: -15px;
+}
+
+form textarea {
+  height: 150px;
+  resize: vertical;
+  
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
