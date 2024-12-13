@@ -107,65 +107,7 @@ footer {
   max-width: 800px; /* Limit the width of the text */
   margin: 0 auto; /* Center align the paragraph */
 }
-
-#contact {
-  padding: 3rem 2rem;
-  text-align: center;
-  display: flex;
-  justify-content: center; /* Centers the form horizontally */
-  align-items: center; /* Centers the form vertically */
-  flex-direction: column; /* Stacks the heading and form vertically */
-  height: 100vh; /* Ensures the content is vertically centered */
-}
-
-#contact h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem; /* Adds spacing between the heading and the form */
-}
-
-#contact form {
-  max-width: 600px;
-  width: 100%;
-  padding: 2rem;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column; /* Arranges form elements vertically */
-  align-items: center; /* Centers form elements horizontally inside the form */
-}
-
-.form-group {
-  margin-bottom: 1rem;
-  width: 100%;
-  text-align: left; /* Ensures labels are left-aligned */
-}
-
-form label {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 0.3rem;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 0.5rem;
-  text-align: center; /* Centers the text inside input/textarea */
-  margin-left: -15px;
-}
-
-form textarea {
-  height: 150px;
-  resize: vertical;
-  
-}
-
-button {
+#about button {
   background-color: #333;
   color: #fff;
   padding: 1rem 2rem;
@@ -173,11 +115,57 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 1rem;
-  width: 100%;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: auto;
+  margin-top: 2rem;
+  display: inline-block;
 }
 
-button:hover {
+#about button:hover {
   background-color: #555;
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+#about button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2); /* Adds focus outline */
+}
+
+#about a {
+  text-decoration: none; /* Remove underline from the link */
+}
+
+
+#contact {
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  flex-direction: column; /* Stacks the content vertically */
+  height: auto; /* Adjusts the height to fit the content */
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem; /* Adds spacing between the heading and the content */
+}
+
+#contact .contact-info {
+  font-size: 1.2rem;
+}
+
+#contact .contact-info p {
+  margin-bottom: 1rem;
+}
+
+#contact .contact-info a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+#contact .contact-info a:hover {
+  color: #007BFF;
 }
