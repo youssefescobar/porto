@@ -15,10 +15,11 @@ header {
 nav ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 1rem;
 }
 
@@ -99,14 +100,15 @@ footer {
 
 #about {
   text-align: center;
-  padding: 3rem 2rem; /* More padding for spacing */
+  padding: 3rem 2rem;
 }
 
 #about p {
-  font-size: 1.5rem; /* Increase the font size of the paragraph */
-  max-width: 800px; /* Limit the width of the text */
-  margin: 0 auto; /* Center align the paragraph */
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
 #about button {
   background-color: #333;
   color: #fff;
@@ -116,38 +118,35 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  width: auto;
   margin-top: 2rem;
   display: inline-block;
 }
 
 #about button:hover {
   background-color: #555;
-  transform: scale(1.05); /* Slightly enlarges the button on hover */
+  transform: scale(1.05);
 }
 
 #about button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2); /* Adds focus outline */
+  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2);
 }
 
 #about a {
-  text-decoration: none; /* Remove underline from the link */
+  text-decoration: none;
 }
-
 
 #contact {
   padding: 3rem 2rem;
   text-align: center;
   display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  flex-direction: column; /* Stacks the content vertically */
-  height: auto; /* Adjusts the height to fit the content */
+  justify-content: center;
+  flex-direction: column;
 }
 
 #contact h2 {
   font-size: 2rem;
-  margin-bottom: 2rem; /* Adds spacing between the heading and the content */
+  margin-bottom: 2rem;
 }
 
 #contact .contact-info {
@@ -168,4 +167,76 @@ footer {
 
 #contact .contact-info a:hover {
   color: #007BFF;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: calc(100% - 2rem);
+  }
+
+  #skills ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills ul li {
+    width: 90%;
+  }
+
+  #certificates-container {
+    flex-direction: column;
+  }
+
+  .certificate {
+    width: calc(100% - 2rem);
+  }
+
+  #about p {
+    font-size: 1.2rem;
+  }
+
+  #about button {
+    width: 100%;
+  }
+
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+
+  #contact .contact-info {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  header {
+    padding: 0.5rem 0;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  #contact h2 {
+    font-size: 1.2rem;
+  }
+
+  #contact .contact-info a {
+    font-size: 1rem;
+  }
 }
