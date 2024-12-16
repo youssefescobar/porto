@@ -22,9 +22,22 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Network Configuration and Troubleshooting Project",
       description:
         "Designed, configured, and troubleshooted a scalable network infrastructure for a mid-sized organization. Implemented VLANs, routing protocols, and network security measures to optimize performance and ensure reliability.",
-      technologies: ["Cisco Packet Tracer", "Switching", "Routing", "Network Security"],
+      technologies: [
+        "Cisco Packet Tracer",
+        "Switching",
+        "Routing",
+        "Network Security",
+      ],
       link: "https://github.com/youssefescobar/ccna-project",
       image: "./images/DY.png", // Replace with the actual image path or URL
+    },
+    {
+      title: "ELT Pipeline with PostgreSQL and Docker",
+      description:
+        "Implemented an end-to-end ELT (Extract, Load, Transform) pipeline using Dockerized PostgreSQL databases. Automated data extraction from a source database, transformation, and loading into a destination database with Python scripts and PostgreSQL utilities.",
+      technologies: ["Docker", "PostgreSQL", "Python", "pg_dump", "psql"],
+      link: "https://github.com/youssefescobar/simple-elt-pipeline", // Replace with your actual GitHub repository link
+      image: "./images/0_fs7Vkwo7O47De1E3.png", // Replace with the actual image path or URL
     },
   ];
 
@@ -65,7 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const result = await response.json();
         document.getElementById("form-response").innerText = result.message;
       } catch (error) {
-        document.getElementById("form-response").innerText = "Something went wrong. Please try again.";
+        document.getElementById("form-response").innerText =
+          "Something went wrong. Please try again.";
       }
     });
   }
