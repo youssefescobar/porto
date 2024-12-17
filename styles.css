@@ -183,6 +183,12 @@ footer {
   margin: 0;
   color: #333;
 }
+.contact-item i {
+  font-size: 1.5rem;
+  color: black;
+  margin-right: 0.8rem; 
+}
+
 
 /* Adjust layout for smaller screens */
 @media (max-width: 768px) {
