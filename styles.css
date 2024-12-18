@@ -39,6 +39,7 @@ nav ul li a {
   padding: 0.5rem 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 nav ul li a:hover {
   background-color: #555;
   border-radius: 5px;
@@ -200,12 +201,12 @@ footer {
   margin: 0;
   color: #333;
 }
+
 .contact-item i {
   font-size: 1.5rem;
   color: black;
   margin-right: 0.8rem; 
 }
-
 
 /* Adjust layout for smaller screens */
 @media (max-width: 768px) {
@@ -218,10 +219,7 @@ footer {
     align-items: center;
     gap: 1rem;
   }
-}
 
-/* Responsive Styles */
-@media (max-width: 768px) {
   #projects-container {
     flex-direction: column;
     align-items: center;
@@ -290,5 +288,22 @@ footer {
 
   #contact .contact-info a {
     font-size: 1rem;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+  }
+
+  .project {
+    width: calc(100% - 2rem);
+  }
+
+  #projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills ul li {
+    width: 90%;
   }
 }
