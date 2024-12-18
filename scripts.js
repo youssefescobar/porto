@@ -39,6 +39,23 @@ document.addEventListener("DOMContentLoaded", function () {
       link: "https://github.com/youssefescobar/simple-elt-pipeline", // Replace with your actual GitHub repository link
       image: "./images/0_fs7Vkwo7O47De1E3.png", // Replace with the actual image path or URL
     },
+    {
+      title: "Lung Cancer Prediction using Machine Learning",
+      description:
+        "Developed a machine learning pipeline to predict lung cancer based on a health survey dataset. The project involves data preprocessing, feature engineering, model training, and hyperparameter tuning using multiple machine learning algorithms including Random Forest, Decision Trees, and SVM. The best model was selected through cross-validation and hyperparameter tuning, achieving high accuracy in predicting lung cancer presence.",
+      technologies: [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+        "Logistic Regression",
+        "Random Forest",
+        "SVM",
+      ],
+      link: "https://github.com/youssefescobar/Lung-Cancer-Detection", // Replace with your actual GitHub repository link
+      image: "./images/image.png", // Replace with the actual image path or URL
+    },
   ];
 
   projects.forEach((project) => {
