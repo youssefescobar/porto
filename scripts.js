@@ -56,6 +56,27 @@ document.addEventListener("DOMContentLoaded", function () {
       link: "https://github.com/youssefescobar/Lung-Cancer-Detection", // Replace with your actual GitHub repository link
       image: "./images/image.png", // Replace with the actual image path or URL
     },
+    {
+      title: "Spam Email Classification using NLP",
+      description:
+        "Built a Natural Language Processing (NLP) pipeline to classify emails as spam or non-spam. The project involves data preprocessing, text cleaning, feature extraction using TF-IDF, and training multiple machine learning models such as Logistic Regression, Naive Bayes, SVM, and Random Forest. Each model was evaluated and compared to identify the best performing classifier for spam detection.",
+      technologies: [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "NLTK",
+        "Matplotlib",
+        "Seaborn",
+        "WordCloud",
+        "Logistic Regression",
+        "Naive Bayes",
+        "SVM",
+        "Random Forest"
+      ],
+      link: "https://github.com/youssefescobar/Spam_detection",
+      image: "./images/image copy.png", // Replace with the actual image path or URL
+    }
+    
   ];
 
   projects.forEach((project) => {
