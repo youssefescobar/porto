@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "A stock management application developed using C# in Microsoft Visual Studio. The system provides functionalities to manage and track inventory levels, monitor stock movements, and generate reports.",
       technologies: ["C#"],
       link: "https://github.com/youssefescobar/stock-management/tree/master",
-      image: "./images/How-to-Change-Email-on-StockX-1280x720.jpg", // Replace with the actual image path or URL
+      image: "./images/How-to-Change-Email-on-StockX-1280x720.jpg", 
     },
     {
       title: "Cipher Encryption and Decryption Web App",
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Built a full stack web application for text encryption and decryption using various cipher algorithms. Ensured reliability and security through thorough testing.",
       technologies: ["HTML", "CSS", "JavaScript", "Flask", "Python"],
       link: "https://github.com/youssefescobar/Crpyto-project",
-      image: "./images/what-is-cryptography-scaled.webp", // Replace with the actual image path or URL
+      image: "./images/what-is-cryptography-scaled.webp", 
     },
     {
       title: "Network Configuration and Troubleshooting Project",
@@ -29,15 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
         "Network Security",
       ],
       link: "https://github.com/youssefescobar/ccna-project",
-      image: "./images/DY.png", // Replace with the actual image path or URL
+      image: "./images/DY.png", 
     },
     {
       title: "ELT Pipeline with PostgreSQL and Docker",
       description:
         "Implemented an end-to-end ELT (Extract, Load, Transform) pipeline using Dockerized PostgreSQL databases. Automated data extraction from a source database, transformation, and loading into a destination database with Python scripts and PostgreSQL utilities.",
       technologies: ["Docker", "PostgreSQL", "Python", "pg_dump", "psql"],
-      link: "https://github.com/youssefescobar/simple-elt-pipeline", // Replace with your actual GitHub repository link
-      image: "./images/0_fs7Vkwo7O47De1E3.png", // Replace with the actual image path or URL
+      link: "https://github.com/youssefescobar/simple-elt-pipeline",
+      image: "./images/0_fs7Vkwo7O47De1E3.png", 
     },
     {
       title: "Lung Cancer Prediction using Machine Learning",
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "Random Forest",
         "SVM",
       ],
-      link: "https://github.com/youssefescobar/Lung-Cancer-Detection", // Replace with your actual GitHub repository link
-      image: "./images/image.png", // Replace with the actual image path or URL
+      link: "https://github.com/youssefescobar/Lung-Cancer-Detection",
+      image: "./images/image.png", 
     },
     {
       title: "Spam Email Classification using NLP",
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Random Forest"
       ],
       link: "https://github.com/youssefescobar/Spam_detection",
-      image: "./images/image copy.png", // Replace with the actual image path or URL
+      image: "./images/image copy.png", 
     }
     
   ];
@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
     projectsContainer.appendChild(projectDiv);
   });
 
-  // Add contact form functionality
   const contactForm = document.getElementById("contact-form");
 
   if (contactForm) {
@@ -129,12 +128,11 @@ window.addEventListener('scroll', function() {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
   
   if (currentScroll > lastScrollTop) {
-    // Scrolling down
-    navbar.style.top = '-80px'; // Adjust to your navbar height
+    navbar.style.top = '-80px'; 
   } else {
-    // Scrolling up
+
     navbar.style.top = '0';
   }
 
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
 });
