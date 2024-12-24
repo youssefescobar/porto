@@ -260,7 +260,7 @@ footer {
 @media (max-width: 768px) {
   nav ul {
     justify-content: center; 
-    width: 100%;
+  }
 
   nav ul li {
     margin: 0 1rem; 
